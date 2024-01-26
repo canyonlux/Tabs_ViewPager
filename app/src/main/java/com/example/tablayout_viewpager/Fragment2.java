@@ -19,10 +19,11 @@ public class Fragment2 extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment2, container, false);
         recyclerView = view.findViewById(R.id.recyclerView);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, false));
+
 
         // Array de IDs de imágenes en drawable
-        int[] imageIds = {R.drawable.image1, R.drawable.image2, R.drawable.image3, R.drawable.image4, R.drawable.image5}; // Reemplaza con tus imágenes
+        int[] imageIds = {R.drawable.image1, R.drawable.image2, R.drawable.image3}; // Reemplaza con tus imágenes
         recyclerView.setAdapter(new ImageAdapter(getActivity(), imageIds));
 
         return view;

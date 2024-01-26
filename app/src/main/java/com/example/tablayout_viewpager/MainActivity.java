@@ -15,9 +15,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ViewPager2 viewPager = findViewById(R.id.pager);
+
+        viewPager.setPageTransformer(new CustomPageTransformer());
 
         // Inicializa el ViewPager2 y el TabLayout
-        ViewPager2 viewPager = findViewById(R.id.pager);
         TabLayout tabLayout = findViewById(R.id.appbartabs);
 
         // Configura el adaptador para el ViewPager2
