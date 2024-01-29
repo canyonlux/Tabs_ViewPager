@@ -29,12 +29,14 @@ android {
 }
 
 dependencies {
-    implementation ("com.google.android.material:material:<última_versión>")
-    implementation ("androidx.viewpager2:viewpager2:<última_versión>")
-    implementation ("androidx.viewpager2:viewpager2:1.0.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.9.0")
+    implementation("androidx.viewpager2:viewpager2:1.0.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+
+    // Eliminé la línea que importaba archivos .jar y .aar directamente desde el SDK de Android
+    // ya que esto no es una práctica común y puede causar conflictos
+
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
