@@ -1,3 +1,24 @@
+/**
+ * MainActivity es la actividad principal de esta aplicación Android.
+ * Esta clase extiende {@link AppCompatActivity} y se encarga de configurar y gestionar
+ * la interacción entre un {@link ViewPager2}, {@link TabLayout} y tres fragmentos diferentes.
+ *
+ * La actividad configura un ViewPager2 para deslizar entre los fragmentos y sincroniza el ViewPager2
+ * con un TabLayout usando {@link TabLayoutMediator}. Además, gestiona el cambio de fragmentos
+ * al seleccionar diferentes pestañas en el TabLayout.
+ *
+ * @see ViewPager2
+ * @see TabLayout
+ * @see TabLayoutMediator
+ * @see Fragment
+ * @see SectionsPagerAdapter
+ * @see AppCompatActivity
+ * @version 1.0
+ * @author Rubén
+ */
+
+
+
 package com.example.tablayout_viewpager;
 
 import android.os.Bundle;

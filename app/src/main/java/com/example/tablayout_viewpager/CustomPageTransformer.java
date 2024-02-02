@@ -17,6 +17,7 @@ import androidx.viewpager2.widget.ViewPager2;
  *     viewPager2.setPageTransformer(new CustomPageTransformer());
  * </pre>
  *
+
  * @author Rubén
  */
 public class CustomPageTransformer implements ViewPager2.PageTransformer {
@@ -30,6 +31,7 @@ public class CustomPageTransformer implements ViewPager2.PageTransformer {
      *                 El valor 0 indica que la página está en el centro, valores negativos
      *                 indican páginas a la izquierda, y valores positivos páginas a la derecha.
      */
+
     @Override
     public void transformPage(View page, float position) {
         page.setRotationY(position * -30); // Aplica una rotación en el eje Y basada en la posición.
